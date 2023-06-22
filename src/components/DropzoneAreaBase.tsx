@@ -336,7 +336,7 @@ class DropzoneAreaBase extends PureComponent<
         horizontal: "left",
         vertical: "bottom",
       },
-      autoHideDuration: 6000,
+      autoHideDuration: 4000,
     },
     getFileLimitExceedMessage: ((filesLimit) =>
       `Maximum allowed number of files exceeded. Only ${filesLimit} allowed`) as NonNullable<
@@ -533,7 +533,8 @@ class DropzoneAreaBase extends PureComponent<
       },
       position: "relative",
       width: "100%",
-      minHeight: "250px",
+      minHeight: "160px",
+      marginBottom: "15px",
       backgroundColor: "background.paper",
       border: "dashed",
       borderColor: "divider",
@@ -557,6 +558,8 @@ class DropzoneAreaBase extends PureComponent<
       textAlign: "center",
     } as BoxProps["sx"],
     text: {
+      fontWeight: "bold",
+      fontSize: "1.2rem",
       marginBottom: 3,
       marginTop: 3,
     } as TypographyProps["sx"],
